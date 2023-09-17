@@ -1,8 +1,6 @@
-document.getElementById('lanzarDado').addEventListener('click', function() {
-    // Genera un número aleatorio entre 1 y 6
-    const resultado = Math.floor(Math.random() * 6) + 1;
-  
-    // Muestra el resultado en la pantalla
-    document.getElementById('resultado').textContent = `Resultado: ${resultado}`;
-  });
-  
+
+Math.floor( Math.random() * 6 )
+
+let diceRoll = Math.floor( Math.random() * 6 ) +1;
+
+console.log(`You rolled a: ${diceRoll}`);
