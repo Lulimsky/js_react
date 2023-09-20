@@ -25,14 +25,12 @@ const people = [
     },
   ];
   
-  function obtainByGender(gender) {
-    return people.filter(person => person.gender === gender);
-  }
-  
+function obtainGender(gender) {
+  return people.filter(person => person.gender === gender);
+}
 
-  const woman = obtainByGender('Female');
-  const men = obtainByGender('Male');
-  
-  console.log('Mujeres:', woman);
-  console.log('Hombres:', men);
-  
+function displayResults(gender) {
+  const filteredPeople = obtainGender(gender);
+  const outputElement = document.getElementById('output');
+  outputElement.textContent = JSON.stringify(filteredPeople, null, 2);
+}
