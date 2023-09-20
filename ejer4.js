@@ -1,9 +1,7 @@
-const numero = prompt("Por favor, ingresa un número:");
-
-if (numero >= 0 && numero <= 100) {
-  console.log("El número está dentro del rango de 0 a 100.");
-} else {
-  console.log("El número está fuera del rango de 0 a 100.");
+function isNumberInRange(x) {
+  if (x >= 0 && x <= 100) {
+    console.log(`The number ${x} is within the range of 0 to 100.`);
+  } else {
+    console.log(`The number ${x} is outside the range of 0 to 100.`);
+  }
 }
-
-  
