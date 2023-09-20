@@ -1,7 +1,4 @@
 function takeNames() {
-    const namesArray = people.map(person => person.name);
-    const displayOutput = document.getElementById("output");
-
     const people = [
         {
           name: 'Jhon',
@@ -24,11 +21,13 @@ function takeNames() {
         {
           name: 'Allison',
           age: 33,
-          favoriteColor: 'Gree',
+          favoriteColor: 'Green',
           gender: 'Female',
         },
       ];
       
-      
+    const namesArray = people.map(person => person.name);
+    const displayOutput = document.getElementById("displayOutput");
+
     displayOutput.textContent = namesArray.join(", ");
 }
